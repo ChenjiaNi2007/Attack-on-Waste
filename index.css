@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 180%;
+  color: #666;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 10px 60px;
+  box-sizing: border-box;
+  z-index: 5;
+  opacity: 2;
+}
+nav .logo{
+  float: left;
+}
+nav .logo img{
+  height: 6vw;
+}
+nav.black .logo img{
+  height: 60px;
+}
+nav ul{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  margin-top: 25px;
+  line-height: none;
+  font-size: 1.5vw;
+  color: white;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px greenyellow;
+}
+nav ul li.active,
+nav ul li:hover{
+  color: green;
+  cursor: pointer;  
+  text-decoration: none;
+}
+
+/*Parallax Effects*/
+.parallax1 {
+  background: url("https://www.sciencenews.org/wp-content/uploads/2021/01/013021_plastics_feat.jpg");
+  min-height: 100%;
+}
+.parallax2 {
+  background: url("https://www.wallpapers13.com/wp-content/uploads/2016/08/Summer-background-tropical-beach-with-palmi.okean-with-crystal-clear-water-and-white-clouds-in-the-sky-Desktop-Wallpaper-download-free-1920x1200-915x515.jpg");
+  min-height: 40%;
+}
+.parallax3 {
+  background: url("https://www.forgerecycling.co.uk/blog/wp-content/uploads/2018/08/bigstock-Top-view-of-white-recycle-eco-209395741.jpg");
+  min-height: 100%;
+}
+.parallax1, .parallax2, .parallax3 {
+  position: relative;
+  opacity: .75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Headings*/
+.heading {
+  position: absolute;
+  color: white;
+  font-size: 550%;
+  top: 38%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+}
+.heading2 {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+}
+.parallax-heading {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: #fff;
+  font-size: 250%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #000;
+}
+
+/*Text and Paragraphs Stuff*/
+section {
+  overflow: auto;
+  padding: 50px 80px;
+}
+.dark{
+  overflow: auto;
+  padding: 50px 80px;
+  background-color: #323232;
+  color: #f2f2f2;
+}
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 40px;
+}
+h3{
+    font-size: 35px;
+}
+p{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 900px){
+  nav ul li{
+    font-size: 12px;
+  }
+  .heading{
+    font-size: 250%;
+  }
+}
+@media (max-width: 600px){
+  .heading{
+    font-size: 250%;
+  }
+  .heading-sm{
+    font-size: 180%
+  }
+  .two-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li{
+    font-size: 8px;
+  }
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+

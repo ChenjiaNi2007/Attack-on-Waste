@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Testing python</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.3/brython.min.js" integrity="sha512-Idh2r/vlinKy7iPSPHkWFGfS0VTvg+eJSsMe84WJ6cV1kuE7PLPhSbm8yI4X16NmDhtYIAd17yVsIs6j0pz5uA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.3/brython_stdlib.min.js" integrity="sha512-/dbn5WlrCaChpaIirA1PAiMtxmo2WHXbS1Qu4DjssLekyFQwPunfQOTqQ0YNeGom7uRjJpvg7LVGSVuWN3noJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body onload="brython()">
+
+  <h2 id="hello"></h2>
+  <button id="alert-btn">Alert & Insert</button>
+
+  <script type="text/python" id="script0">
+        from browser import document, console, alert
+        #import bs4
+        import requests
+
+        def show(e):
+          console.log('hello')
+
+        document['alert-btn'].bind('click', show)
+    </script>
+</body>
+</html>
